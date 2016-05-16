@@ -1,0 +1,76 @@
+#nav {
+}
+#nav .menu-item { display:block; clear:both; float:none; height:31px; margin:0 0 0 0;  background: url(../img/sub_bg.png) repeat-x right top;  overflow:hidden; text-align:center; padding:0px; width:108px;}
+#nav .menu-item a {display:block; margin:0px; height:31px;LINE-HEIGHT: 31px;color:#333333; overflow:hidden; font-size:13px; background:none; }
+#nav .menu-item:hover { display:block; clear:both; float:none; height:31px; background: url(../img/sub_over_bg.jpg) repeat-x right top;margin:0px;  overflow:hidden; margin:0 0 0 0; width:108px; padding:0px; }
+#nav .menu-item:hover a,#nav .menu-item a:hover {
+	display:block;margin:0px; height:31px; 
+	LINE-HEIGHT: 31px; color:#FFF; overflow:hidden;background: url(../img/sub_over_bg.jpg) repeat-x right top;}
+
+#nav .menu-item-b { display:block; clear:both; float:none; height:17px; width:108px; padding:0;
+ background:#fff; margin:-1px 0 0 0; background:url(../img/sub_arr.png) no-repeat center bottom;
+}
+#nav .menu-item-b span { display:block; clear:both; float:none; height:4px;
+ background:url('../img/sub_menu_bg5.jpg') no-repeat right bottom; margin:0px; padding:0 24px 0 19px;
+}
+
+
+
+#nav LI UL {
+ Z-INDEX: 999; LEFT: -999em; margin:0 0 0 -19px;
+  #+margin:13px 0 0 -90px;
+	_margin:13px 0 0 -89px;
+	padding:7px 0;
+	POSITION: absolute;
+	display:block;
+	clear:both;
+}
+
+#nav LI:hover {
+	POSITION: static
+}
+#nav LI.hover {
+	POSITION: static
+}
+#nav LI:hover UL UL {
+	LEFT: -999em
+}
+#nav LI.sfhover UL UL {
+	LEFT: -999em
+}
+#nav LI:hover UL UL UL {
+	LEFT: -999em
+}
+#nav LI.sfhover UL UL UL {
+	LEFT: -999em
+}
+#nav LI:hover UL UL UL UL {
+	LEFT: -999em
+}
+#nav LI.sfhover UL UL UL UL {
+	LEFT: -999em
+}
+#nav LI:hover UL {
+	LEFT: auto
+}
+#nav LI.sfhover UL {
+	LEFT: auto
+}
+#nav LI LI:hover UL {
+	LEFT: auto
+}
+#nav LI LI.sfhover UL {
+	LEFT: auto
+}
+#nav LI LI LI:hover UL {
+	LEFT: auto
+}
+#nav LI LI LI.sfhover UL {
+	LEFT: auto
+}
+#nav LI LI LI LI:hover UL {
+	LEFT: auto
+}
+#nav LI LI LI LI.sfhover UL {
+	LEFT: auto
+}
