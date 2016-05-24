@@ -97,66 +97,15 @@
 </div>
 <div id="cont">
     <div class="cont_left">
-        <p><strong>享受林中漫步，体验不一样的怡沁园 </strong>上海怡沁园度假村位于崇明生态岛的中北部，地处东平国家森林公园南侧，毗邻根宝足球基地，总占地面积为33.3公顷，是一个集住宿、餐饮、会议、休闲娱乐于一身的高规格商务休闲型度假村。</p>
-        <p>怡沁园整体设计以东方色彩为主、庄重典雅，古朴大方。园内森林繁茂、湖水澄碧、百鸟鸣唱、野趣浓郁、宁静的氛围是感受和回归大自然的理想休闲度假胜地。 </p>
-    </div>
-    <div class="cont_right">
-        <form method="post" action="http://www.shyiqinyuan.com/" id="form1">
-            <div class="aspNetHidden">
-                <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
-                       value="/wEPDwULLTE2NTE0MzA4OTVkZIvkLgFLDe3ZV5I/DRBsweKQntSaC4lwNza9sUAxvZER">
-            </div>
-            <div class="aspNetHidden">
-                <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBALrh4PtDALH7KrqCALKw7raDwKLt6h4jQFp55XxvMxqbZZInGxiz/Hzrp7ZjXL/8G9ZjB45Gyo=">
-            </div>
-            <div class="cont_order">
-                <ul>
-                    <strong>预订</strong>
-                    <li><label>抵达日期</label>
-                        <input name="txtCheckDate" type="text" id="txtCheckDate" class="order_data"
-                               onfocus="WdatePicker({minDate:&#39;%y-%M-#{%d}&#39;,dateFmt:&#39;yyyy-MM-dd&#39;})">
-                    </li>
-                    <li><label>住宿天数</label>
-                        <div class="select_box">
-                            <span id="lblDays" class="select_txt">1</span>
-                            <input type="hidden" name="txtDays" id="txtDays" value="1">
-
-                            <div class="option">
-                                <a>1</a><a>2</a><a>3</a><a>4</a><a>5</a><a>6</a><a>7</a><a>8</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li><label></label>
-                        <input type="submit" name="btnOrder" value="预订" id="btnOrder" class="order_button">
-                    </li>
-                </ul>
-            </div>
-        </form>
-        <form id="form2" name="form2" action="http://www.shyiqinyuan.com/update.asp" method="post">
-            <div class="cont_subscribe"><strong>订阅怡沁园最新信息</strong>
-                <input type="text"
-                       onfocus="if(this.value==&#39;请输入您的E-mail&#39;) {this.value=&#39;&#39;;}this.style.color=&#39;#555&#39;;"
-                       onblur="if(this.value==&#39;&#39;) {this.value=&#39;请输入您的E-mail地址进行订阅&#39;;this.style.color=&#39;#adadad&#39;;}"
-                       value="请输入您的E-mail地址进行订阅" name="imail" id="imail">
-                <input name="按钮" type="button" class="subscribe_button" value="订阅" onclick="checkReg();">
-            </div>
-        </form>
+        <strong>享受林中漫步，体验不一样的东尚海 </strong>
+        <p>上海东尚海会所位于上海浦东，距离上海迪士尼仅3公里,驾车行驶至迪士尼仅需10分钟车程。东尚海会所总占地面积100亩,拥有多幢生态别墅,倚临湖边。
+            此外还有宾馆式标准客房30套,供来宾住宿度假。园内配有足球场,台球房,乒乓房,棋牌室,垂钓区等多项娱乐设施。东尚海所的设计以绿色生态,典雅大方为主,
+            园内树木繁盛,湖水澄碧,空气清新,是感受和回归生态的娱乐度假好场所。</p>
     </div>
 </div>
 <div id="copyright">
-    <div class="copyright_c">Copyright ©2015-2016 上海市东尚海会所 All Rights Reserved.
-        <ul>
-            <li><a href="http://www.shyiqinyuan.com/about.html">关于怡沁园</a></li>
-            <li><a href="http://www.shyiqinyuan.com/jobs.html">职业发展</a></li>
-            <li><a href="http://www.shyiqinyuan.com/news.asp">媒体新闻</a></li>
-            <li><a href="http://www.shyiqinyuan.com/contact.html">联系我们</a></li>
-            <li><a href="http://weibo.com/shyiqinyuan" target="_blank">
-                关注怡沁园
-                <img src="../img/weibo.jpg" width="17" height="17" align="absmiddle">
-                期待您的分享
-            </a></li>
-
-        </ul>
+    <div class="copyright_c">
+        Copyright ©2015-2016 上海市东尚海会所 All Rights Reserved.
     </div>
 </div>
 
@@ -165,25 +114,8 @@
 <script src="../js/superfish.js" type="text/javascript"></script>
 <script src="../js/MSClass.js" type="text/javascript"></script>
 <script src="../js/WdatePicker.js" type="text/javascript"></script>
-
 <script type="text/javascript">
     $(document).ready(function () {
-        $(".select_box").click(function (event) {
-            event.stopPropagation();
-            $(this).find(".option").toggle();
-            $(this).parent().siblings().find(".option").hide();
-        });
-        $(document).click(function (event) {
-            var eo = $(event.target);
-            if ($(".select_box").is(":visible") && eo.attr("class") != "option" && !eo.parent(".option").length)
-                $('.option').hide();
-        });
-        /*赋值给文本框*/
-        $(".option a").click(function () {
-            var value = $(this).text();
-            $(this).parent().siblings(".select_txt").text(value);
-            $("#txtDays").val(value)
-        });
         new Marquee({
             MSClassID: "MSClassBox",
             ContentID: "ContentID",
@@ -201,19 +133,8 @@
             AutoStart: 1
         });
     });
-
-    function checkReg() {
-
-        var temp = document.getElementById("imail");
-        //对电子邮件的验证
-        var myreg = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-        if (!myreg.test(temp.value)) {
-            alert('请输入正确的邮箱地址！');
-            return false;
-        }
-        document.getElementById("form2").submit();
-    }
 </script>
+
 
 <!--[if lte IE 7]>
 <script type="text/javascript" src="js/DD_belatedPNG_0.0.8a.js"></script>
