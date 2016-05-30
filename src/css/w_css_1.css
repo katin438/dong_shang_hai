@@ -102,7 +102,7 @@ img{ border:none;}
 .contents .cont_list h3{ font-size:28px; color:#b18d4c; display:block; margin:8px 0 12px 0; font-weight:normal;}
 .contents .cont_list ul{ width:1150px;}
 .contents .cont_list ul li{ width:341px; float:left; border:1px solid #dcdcd6; background-color:#fff; margin:10px 18px 10px 0; line-height:160%;}
-.contents .cont_list ul li span{ display:block; clear:both; margin:3px 18px 0 18px;}
+.contents .cont_list ul li span{ display:block; clear:both; margin:3px 18px 0 18px; min-height: 141px;}
 .contents .cont_list ul li span sup{ font-size:10px;}
 .contents .cont_list ul li span strong{ display:block; line-height:150%; padding:15px 0 8px 0; color:#3d3c36; font-size:19px; font-weight:normal;  font-family:"黑体";}
 
