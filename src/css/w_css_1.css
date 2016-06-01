@@ -142,7 +142,7 @@ img{ border:none;}
 .show_cont_info .left_info ul li{ background:url(../img/dian.png) no-repeat 1px 8px; padding:0 0 0 11px; margin:3px 0; line-height:160%;}
 .show_cont_info .right_info{ width:222px; margin:20px 0 0 0; float:right; background-color:#fbfbfa; padding:14px 14px 5px 14px; line-height:180%;}
 .show_cont_info .right_info .orderH{ background:url(../img/order_bg2.jpg) repeat-x left top; display:block; height:30px; line-height:30px; text-align:center; color:#fff; font-size:18px; margin:0 0 11px 0; text-decoration:none; cursor:pointer;}
-.show_cont_info .right_info .win_info{ display:block; clear:both; padding:0 0 10px 0; border-bottom:1px solid #bc8a2f; margin:0 0 12px 0;}
+.show_cont_info .right_info .win_info{ display:block; clear:both; padding:0 0 10px 0; margin:0 0 12px 0;}
 .show_cont_info .right_info .win_info2{ background:url(../img/tel.jpg) no-repeat 10px 8px; padding:0 0 0 35px; font-size:16px; line-height:180%; display:block; clear:both;  margin:0 0 6px 0;}
 
 .show_cont_info .d1{ width:800px; line-height:170%;}
